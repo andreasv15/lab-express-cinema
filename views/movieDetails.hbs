@@ -1,0 +1,26 @@
+<h1> Detalles de la pelicula </h1>
+
+<section id="detailsMovie">
+    <img id="imgDetailMovie"src="{{movieDetails.image}}" width="270px" height="285px" /> 
+
+    <article id="infDetails">
+        <a href="/movies"> Go back </a>
+        <p id="titleDetailMovie"> {{movieDetails.title}} </p>
+        <p id="directorDetailMovie"> Director: {{movieDetails.director}}</p>
+        <p > <span id="starsDetailMovie">Stars</span>
+            {{#each movieDetails.stars}}
+                <li>{{this}}</li>
+            {{/each}}
+        </p>
+
+        <p id="descriptionDetailMovie"> {{movieDetails.description}} </p>
+        <p> 
+            {{#each movieDetails.showtimes}}
+                {{this}} |
+            {{/each}}
+
+        </p>
+
+    </article>
+</section>
+

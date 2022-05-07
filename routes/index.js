@@ -19,4 +19,22 @@ router.get("/movies", (req,res) => {
     })
 })
 
+router.get("/movie/:id", (req, res) => {
+    const { id } = req.params;
+
+    MovieModel.findById(id)
+    .then((response) => {
+        res.render("movieDetails.hbs", {
+            movieDetails: response
+        })
+    })
+    .catch((err) => {
+        console.log(err)
+    })
+
+
+})
+
+
+
 module.exports = router;

@@ -6,3 +6,83 @@ body {
 a {
   color: #00B7FF;
 }
+
+#indexTodo {
+  height: 100vh;
+  padding-right: 5%;
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+
+}
+
+#contentIndex {
+  padding-right: 5%;
+}
+
+.titleIndex {
+  color: white;
+  font-size: 80px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+#buttonMovies {
+  background-color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 40px;
+  color: #00B7FF;
+  font-size: 15px;
+}
+
+#listMovies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.eachMovie {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 0px 10px 30px 10px;
+}
+
+.titleMovie {
+  font-weight: bold;
+}
+
+#detailsMovie {
+  display: flex;
+}
+
+#imgDetailMovie {
+  padding-right: 30px;
+}
+
+#titleDetailMovie {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+#directorDetailMovie {
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+#starsDetailMovie {
+  font-size: 13px;
+  font-weight: bold;
+
+}
+
+#descriptionDetailMovie {
+  width: 60%;
+}
+
+
